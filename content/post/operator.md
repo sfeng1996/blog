@@ -2,15 +2,15 @@
 layout:     post
 title:      "operator简单示例"
 #subtitle:   "本文翻译自istio官方文档"
-description: ""
-excerpt: "本何将应用流量逐渐从旧版本的服务迁移到新版本。通过Istio，可以使用一系列不同权重的规则（10%，20%，··· 100%）将流量平缓地从旧版本服务迁移到新版本服务。"
-date:     2017-11-07
-author:     ""
-image: "https://img.zhaohuabing.com/in-post/istio-traffic-shifting/crossroads.png"
+#description: ""
+excerpt: "本文演示使用operator-framework开发一个operator demo"
+date:     2021-11-22
+#author:     ""
+image: "https://images.unsplash.com/photo-1637507630057-7dfde798f16c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
 categories: [ "Tech"]
 tags:
-    - Istio
-URL: "/2017/11/07/istio-traffic-shifting/"
+    - Kubertes
+URL: "/2021/11/22/kubernetes-operator/"
 ---
 
 # Operator 简单示例
