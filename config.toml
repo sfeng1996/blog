@@ -14,9 +14,9 @@ home = ["HTML", "RSS", "Algolia"]
 
 [params]
   header_image = "img/site.jpg"
-  SEOTitle = "孙峰的博客 | SFeng Blog"
+  SEOTitle = "孙峰的博客"
   description = "孙峰，程序员, 云原声爱好者 | fuck cloud。"
-  keyword = "孙峰, sfeng, sfeng, , 孙峰的网络日志, 孙峰的博客, Sunfeng Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice"
+  keyword = "孙峰, sfeng, sfeng, , 孙峰的网络日志, 孙峰的博客, Sunfeng Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Kubernetes"
   slogan = "仰望星空，脚踏实地"
 
   image_404 = "img/404-bg.jpg"
