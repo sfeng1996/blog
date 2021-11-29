@@ -17,7 +17,7 @@ home = ["HTML", "RSS", "Algolia"]
   SEOTitle = "CloudNative"
   description = "孙峰，程序员, 云原声爱好者 | fuck cloud。"
   keyword = "孙峰, sfeng, sfeng, , 孙峰的网络日志, 孙峰的博客, Sunfeng Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Kubernetes"
-  slogan = "fuck cloudNative"
+  slogan = ""
 
   image_404 = "img/404-bg.jpg"
   title_404 = "你来到了没有知识的荒原 :("
