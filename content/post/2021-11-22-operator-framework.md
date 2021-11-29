@@ -6,7 +6,7 @@ description: "本文演示使用operator-framework开发一个operator demo"
 excerpt: "本文演示使用operator-framework开发一个operator demo"
 date:     2021-11-22
 #author:     ""
-image: "https://images.unsplash.com/photo-1637507630057-7dfde798f16c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+image: "https://images.unsplash.com/photo-1637507630057-7dfde798f16c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=870&q=80"
 categories: [ "Tech"]
 tags:
     - Kubertes
