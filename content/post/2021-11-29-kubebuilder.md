@@ -6,7 +6,7 @@ description: "本文演示使用kubebuilder开发一个cronjob控制器"
 excerpt: "本文演示使用kubebuilder开发一个operator demo"
 date:     2021-11-29
 #author:     ""
-image: "https://images.unsplash.com/photo-1554343935-c709f1952dcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ1fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+image: "https://images.unsplash.com/photo-1628701298986-b7bd7e327df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
 categories: [ "Tech"]
 tags:
 - Kubertes
