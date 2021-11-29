@@ -10,7 +10,7 @@ image: "https://images.unsplash.com/photo-1637507630057-7dfde798f16c?ixlib=rb-1.
 categories: [ "Tech"]
 tags:
     - Kubertes
-URL: "/2021/11/22/kubernetes-operator/"
+URL: "/2021/11/22/operator-framework/"
 ---
 
 # Operator 简单示例
