@@ -1,4 +1,4 @@
-baseurl = "https://www.sfernetes.com"
+baseurl = "/"
 title = "SFeng Blog"
 #theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
