@@ -1,4 +1,4 @@
-baseurl = "http://www.sfernetes.com"
+baseurl = "https://www.sfernetes.com"
 title = "SFeng Blog"
 #theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
@@ -14,10 +14,10 @@ home = ["HTML", "RSS", "Algolia"]
 
 [params]
   header_image = "img/site.jpg"
-  SEOTitle = "孙峰的博客"
+  SEOTitle = "CloudNative"
   description = "孙峰，程序员, 云原声爱好者 | fuck cloud。"
   keyword = "孙峰, sfeng, sfeng, , 孙峰的网络日志, 孙峰的博客, Sunfeng Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Kubernetes"
-  slogan = "仰望星空，脚踏实地"
+  slogan = "fuck cloudNative"
 
   image_404 = "img/404-bg.jpg"
   title_404 = "你来到了没有知识的荒原 :("
@@ -90,7 +90,7 @@ home = ["HTML", "RSS", "Algolia"]
   
   [[params.friend_link]]
   title = "SFeng的博客"
-  href =  "http://www.sfernetes.com"
+  href =  "https://www.sfernetes.com"
 
   [[params.bookmark_link]]
   title =  "Martin Fowler"
