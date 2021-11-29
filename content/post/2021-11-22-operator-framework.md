@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "operator简单示例"
+title:      "operator-framework"
 #subtitle:   "本文翻译自istio官方文档"
-#description: ""
+description: "本文演示使用operator-framework开发一个operator demo"
 excerpt: "本文演示使用operator-framework开发一个operator demo"
 date:     2021-11-22
 #author:     ""

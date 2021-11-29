@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      "operator demo"
+title:      "kubebuiler"
 #subtitle:   "本文翻译自istio官方文档"
-#description: ""
+description: "本文演示使用kubebuilder开发一个cronjob控制器"
 excerpt: "本文演示使用kubebuilder开发一个operator demo"
 date:     2021-11-29
 #author:     ""
-image: "https://images.unsplash.com/photo-1638091986258-0c285a62defd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"
+image: "https://images.unsplash.com/photo-1554343935-c709f1952dcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ1fHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
 categories: [ "Tech"]
 tags:
 - Kubertes
