@@ -9,8 +9,8 @@ date:     2021-12-01
 image: "https://unsplash.com/blog/content/images/2021/09/Back-to-School-blog.jpg"
 categories: [ "Tech"]
 tags:
-- Kubertes
-  URL: "/2021/12/01/redis-cluster/"
+- Kubertes  
+URL: "/2021/12/01/redis-cluster/"
 ---
 
 # 使用statefulset部署redis-cluster
