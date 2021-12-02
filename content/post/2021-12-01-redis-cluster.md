@@ -75,75 +75,21 @@ data:
   sed -i -e "/myself/ s/[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}/${MY_POD_IP}/" ${REDIS_NODES}
   exec "$@"
  redis.conf: |
-	protected-mode no
   port 7001
-  tcp-backlog 511
-  timeout 300
-  tcp-keepalive 300
-  daemonize yes
-  supervised no
-  pidfile /data/redis6370.pid
-  loglevel notice
-  logfile "/data/redi6370.log"
-  databases 16
-  always-show-logo yes
-  save 900 1 300 10 60 10000
-  stop-writes-on-bgsave-error no
-  rdbcompression yes
-  rdbchecksum yes
+  protected-mode no
+  cluster-enabled yes
+  cluster-config-file /data/nodes.conf
+  cluster-node-timeout 15000
+  #cluster-announce-ip ${MY_POD_IP}
   dbfilename dump.rdb
   dir "/data"
-  replica-serve-stale-data yes
-  replica-read-only yes
-  repl-diskless-sync no
-  repl-diskless-sync-delay 5
-  repl-disable-tcp-nodelay no
-  replica-priority 100
-  lazyfree-lazy-eviction no
-  lazyfree-lazy-expire no
-  lazyfree-lazy-server-del no
-  replica-lazy-flush no
-  appendonly no
-  appendfilename "appendonly.aof"
-  appendfsync everysec
-  no-appendfsync-on-rewrite no
-  auto-aof-rewrite-percentage 100
-  auto-aof-rewrite-min-size 64mb
-  aof-load-truncated yes
-  aof-use-rdb-preamble yes
-  lua-time-limit 5000
-  slowlog-log-slower-than 10000
-  slowlog-max-len 128
-  latency-monitor-threshold 0
-  notify-keyspace-events ""
-  hash-max-ziplist-entries 512
-  hash-max-ziplist-value 64
-  list-max-ziplist-size -2
-  list-compress-depth 0
-  set-max-intset-entries 512
-  zset-max-ziplist-entries 128
-  zset-max-ziplist-value 64
-  hll-sparse-max-bytes 3000
-  stream-node-max-bytes 4096
-  stream-node-max-entries 100
-  activerehashing yes
-  client-output-buffer-limit normal 0 0 0  
-  client-output-buffer-limit replica 256mb 64mb 60
-  client-output-buffer-limit pubsub 32mb 8mb 60
-  hz 10
-  dynamic-hz yes
-  aof-rewrite-incremental-fsync yes
-  rdb-save-incremental-fsync yes
-  maxmemory 4294967296
-  requirepass "LzkpOFLY4I9B"
-  masterauth "LzkpOFLY4I9B"
-  cluster-enabled yes
-  cluster-config-file "nodes.conf"
-  cluster-node-timeout 15000
-  cluster-require-full-coverage no
-  maxmemory-policy "allkeys-lru"
+  save 900 1
+  save 300 10
+  save 60 10000
   cluster-announce-port 7001
   cluster-announce-bus-port 17001
+  logfile "/data/redis.log"
+  requirepass "LzkpOFLY4I9B"
 ```
 
 使用headless service创建redis-cluster访问方式
@@ -207,27 +153,27 @@ spec:
                   fieldPath: status.podIP
             - name: TZ
               value: Asia/Shanghai
-		          image: 'redis:5.0.8'
-		          imagePullPolicy: IfNotPresent
-		          name: redis
-		          ports:
-		            - containerPort: 7001
-		              #hostPort: 7001
-		              name: redis-port
-		              protocol: TCP
-		          volumeMounts:
-		            - mountPath: /data
-		              name: redis-cluster-data
-		              subPath: data
-		              readOnly: false
-		            - mountPath: /etc/redis
-		              name: redis-config
-		              readOnly: false
-	      dnsPolicy: ClusterFirst
-	      volumes:
-	        - name: redis-config
-	          configMap:
-	           name: redis-config
+          image: 'redis:5.0.8'
+          imagePullPolicy: IfNotPresent
+          name: redis
+          ports:
+            - containerPort: 7001
+              #hostPort: 7001
+              name: redis-port
+              protocol: TCP
+          volumeMounts:
+            - mountPath: /data
+              name: redis-cluster-data
+              subPath: data
+              readOnly: false
+            - mountPath: /etc/redis
+              name: redis-config
+              readOnly: false
+      dnsPolicy: ClusterFirst
+      volumes:
+        - name: redis-config
+          configMap:
+           name: redis-config
   volumeClaimTemplates:  #PVC模板
   - metadata:
       name: redis-cluster-data
