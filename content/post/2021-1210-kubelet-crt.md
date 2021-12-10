@@ -9,8 +9,8 @@ date:     2021-12-10
 image: "https://unsplash.com/blog/content/images/2021/04/Bruna-image-1-blog-2.jpg"
 categories: [ "Tech"]
 tags:
-- Kubernetes  
-  URL: "/2021/12/10/kubelet-client-crt/"
+- Kubernetes
+URL: "/2021/12/10/kubelet-client-crt/"
 ---
 
 ## 背景
